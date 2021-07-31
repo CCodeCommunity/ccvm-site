@@ -1,5 +1,4 @@
-# brugmans
-
+# CCVM Site
 ## Project setup
 ```
 npm install
