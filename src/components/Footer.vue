@@ -1,10 +1,9 @@
 <template>
     <div id="footer" :style="`background: ${backgroundColor}; color: ${color}`">
         <div class="container">
-            <div><img src="@/assets/phone.svg" />06 12345678</div>
-            <div><img src="@/assets/email.svg" />voorbeeld@email.com</div>
-            <div><img src="@/assets/insta.svg" />brugmansspringkussenverhuur</div>
-            <div><img src="@/assets/facebook.svg" />brugmansspringkussenverhuur</div>
+            <div><img src="@/assets/email.svg" />luc.dewit@hotmail.nl</div>
+            <div><img src="@/assets/github.svg" />justlucdewit</div>
+            <div><img src="@/assets/twitter.svg" />@machine_cc</div>
         </div>
     </div>
 </template>

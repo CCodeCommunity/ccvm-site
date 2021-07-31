@@ -1,9 +1,5 @@
 {
-<<<<<<< Updated upstream
-  "name": "ccvm-site",
-=======
   "name": "ccvm",
->>>>>>> Stashed changes
   "version": "0.1.0",
   "private": true,
   "scripts": {
