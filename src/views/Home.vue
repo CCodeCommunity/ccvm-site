@@ -13,7 +13,7 @@
                     CCVM is a virtual programming ecosystem designed
                     by Luc de Wit for creating software on a virtual
                     machine. It contains a wide variety of tools to
-                    help with this like an assembler, a disassembler
+                    help with this like an assembler, a disassembler,
                     And a compiler for an intermediate language.
                 </p>
 
