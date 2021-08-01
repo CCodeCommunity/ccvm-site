@@ -34,9 +34,7 @@ export default {
 
 <style scoped lang="scss">
 #header {
-    padding: 0 20px;
     font-weight: 100;
-    font-size: x-large;
     box-shadow: 0px 5px 10px gray;
 
     a {
@@ -49,7 +47,6 @@ export default {
             background: #222;
         }
     }
-    
 
     #title {
         display: flex;
