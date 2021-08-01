@@ -2,6 +2,9 @@
     <div id="app">
         <Header backgroundColor="black"
                 logo="ccvm.png"/>
+
+        <Navigator backgroundColor="black"/>
+        
         <Main>
 
             <Section backgroundColor="white" :padding="200">
@@ -63,6 +66,7 @@ import Section from "./components/Section.vue";
 import Footer from "./components/Footer.vue";
 import Main from "./components/Main.vue";
 import TwoDivide from "./components/TwoDivide.vue";
+import Navigator from "./components/Navigator.vue"
 
 export default {
     name: 'App',
@@ -72,7 +76,8 @@ export default {
         Footer,
         Section,
         Main,
-        TwoDivide
+        TwoDivide,
+        Navigator
     }
 }
 </script>

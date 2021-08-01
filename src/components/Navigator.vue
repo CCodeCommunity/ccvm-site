@@ -1,11 +1,10 @@
 <template>
     <div id="header" :style="`background: ${backgroundColor}; color: ${color}`">
-        
-        <!-- Title & Logo -->
-        <span id="title">
-            <img v-if="logo != null" :src="require(`@/assets/${logo}`)" alt="logo">
-            {{ title }}
-        </span>
+        <ul>
+            <li>Home</li>
+            <li>Download</li>
+            <li>Guide</li>
+        </ul>
     </div>
 </template>
 
@@ -37,9 +36,11 @@ export default {
 
 <style scoped lang="scss">
 #header {
-    padding: 20px;
+    padding: 0 20px;
     font-weight: 100;
     font-size: x-large;
+    box-shadow: 0px 5px 10px gray;
+    
 
     #title {
         display: flex;
@@ -49,6 +50,20 @@ export default {
     img {
         height: 1.5em;
         padding-right: 20px;
+    }
+    
+    ul {
+        list-style: none;
+        margin: 0;
+        
+        li {
+            display: inline-block;
+            padding: 25px 25px;
+
+            &:hover {
+                background: #222;
+            }
+        }
     }
 }
 </style>
