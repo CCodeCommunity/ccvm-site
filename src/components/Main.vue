@@ -12,6 +12,6 @@ export default {
 
 <style scoped lang="scss">
 .main {
-    min-height: calc(100vh - 163px)
+    min-height: calc(100vh - 246px)
 }
 </style>

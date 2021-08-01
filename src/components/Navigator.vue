@@ -1,10 +1,8 @@
 <template>
     <div id="header" :style="`background: ${backgroundColor}; color: ${color}`">
-        <ul>
-            <li>Home</li>
-            <li>Download</li>
-            <li>Guide</li>
-        </ul>
+        <router-link to="/">Home</router-link>
+        <router-link to="/download">Download</router-link>
+        <router-link to="/reference">Reference</router-link>
     </div>
 </template>
 
@@ -40,30 +38,29 @@ export default {
     font-weight: 100;
     font-size: x-large;
     box-shadow: 0px 5px 10px gray;
+
+    a {
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        padding: 25px 25px;
+
+        &:hover, &.router-link-exact-active {
+            background: #222;
+        }
+    }
     
 
     #title {
         display: flex;
         align-items: center;
     }
-
-    img {
-        height: 1.5em;
-        padding-right: 20px;
-    }
     
-    ul {
-        list-style: none;
-        margin: 0;
+
         
         li {
-            display: inline-block;
-            padding: 25px 25px;
-
-            &:hover {
-                background: #222;
-            }
+            
         }
-    }
+    
 }
 </style>
