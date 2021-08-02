@@ -1,11 +1,11 @@
 <template>
     <div>
-        <div id="two-divide">
-            <span :class="`side ${shrinkBehaviour}`">
+        <div id="two-divide" :style="`grid-template-columns: ${columnLayout}`">
+            <span :class="`side ${shrinkBehaviour}`" :style="`background: ${bgLeft}`">
                 <slot name="left"></slot>
             </span>
             
-            <span :class="`side ${shrinkBehaviour === 'disappear' ? 'dont-disappear' : shrinkBehaviour}`">
+            <span :class="`side ${shrinkBehaviour === 'disappear' ? 'dont-disappear' : shrinkBehaviour}`"  :style="`background: ${bgRight}`">
                 <slot name="right"></slot>
             </span>
         </div>
@@ -18,6 +18,21 @@ export default {
         shrinkBehaviour: {
             type: String,
             default: "disappear"
+        },
+
+        columnLayout: {
+            type: String,
+            default: "1fr 1fr"
+        },
+
+        bgLeft: {
+            type: String,
+            default: "white"
+        },
+
+        bgRight: {
+            type: String,
+            default: "white"
         }
     }
 }
@@ -26,12 +41,11 @@ export default {
 <style scoped lang="scss">
 #two-divide {
     display: grid;
-    grid-template-columns: 1fr 1fr;
 
     .side {
         // border: 1px solid red;
-        padding: 25px;
-        margin: 0 25px;
+        padding: 25px 50px;
+        margin: 0 0px;
         text-align: left;
     }
 
