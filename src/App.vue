@@ -27,14 +27,23 @@ export default {
     components: {
         Header,
         Footer,
-        
         Main,
-        
         Navigator
     }
-}
+};
 </script>
 
 <style lang="scss">
 @import "./styles/main.scss";
+
+code {
+    background: #ddd;
+    padding: 5px;
+}
+
+#md-viewer {
+    p {
+        text-align: left;
+    }
+}
 </style>

@@ -44,7 +44,7 @@ export default {
 
     .side {
         // border: 1px solid red;
-        padding: 25px 50px;
+        padding: 0px 0px;
         margin: 0 0px;
         text-align: left;
     }
